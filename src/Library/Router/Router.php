@@ -9,7 +9,7 @@ class Router
     {
         $route = $_SERVER['PATH_INFO'] ?? '/';
         // Récupération des routes de l'application
-        $routes = require 'src/Library/config/routes.php';
+        $routes = require 'src/config/routes.php';
 
         if (isset($routes[$route])) {
             // $action = $routes[$route];

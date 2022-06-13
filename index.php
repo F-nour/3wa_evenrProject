@@ -1,5 +1,5 @@
 <?php
-$autoload = 'src/Library/config/autoload.php';
+$autoload = 'src/config/autoload.php';
 require $autoload;
 
 $router = new \Library\Router\Router;

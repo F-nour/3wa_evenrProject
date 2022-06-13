@@ -1,4 +1,3 @@
 ## config database file
-Library/config/database.php
-.idea/
+config/database.php
 .vscode/
