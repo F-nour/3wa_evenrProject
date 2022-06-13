@@ -7,9 +7,8 @@ abstract class AbstractManager
     protected $db;
     protected $config = 'config/database_3wa.php';
 
-    const FOOTBALL = 'football';
-    const MARATHON = 'marathon';
-    const ROLLER = 'roller';
+    const CATEGORIES = 'categories';
+    const EVENT = 'event';
 
     public function __construct()
     {

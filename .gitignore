@@ -1,3 +1,4 @@
 ## config database file
 config/database.php
+*.sql
 .vscode/
