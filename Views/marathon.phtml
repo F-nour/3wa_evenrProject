@@ -1,32 +1,23 @@
-<?php
-
-require '_head.phtml';
-require '_navbar.phtml';
-
-?>
-<body>
-    <main class="container my-3">
+<main class="container my-3">
 
     <h1>FOOTBALL</h1>
-    
+
     <p>Notre association propose l'organisation de Marathon toute l'année !</p>
-    <img src="../views/course-marathons-urbains.jpeg" />
-    
+    <img src="../assets/images/course-marathons-urbains.jpeg" />
+
     <h2>Liste des prochains Marathons</h2>
-        
-        <form id="search-form">
-            <div class="row">
-                <div class="col">
-                    <label for="search" class="visually-hidden">Rechercher</label>
-                    <input type="text" class="form-control" id="search" placeholder="Taper l'évènement recherché">
-                </div>
-                <div class="col">
-                    <button class="btn btn-primary">Rechercher</button>
-                </div>
+
+    <form id="search-form">
+        <div class="row">
+            <div class="col">
+                <label for="search" class="visually-hidden">Rechercher</label>
+                <input type="text" class="form-control" id="search" placeholder="Taper l'évènement recherché">
             </div>
-        </form>
-    
-        <ul id="event-list"></ul>
-    </main>
-</body>
-</html>
+            <div class="col">
+                <button class="btn btn-primary">Rechercher</button>
+            </div>
+        </div>
+    </form>
+
+    <ul id="event-list"></ul>
+</main>
