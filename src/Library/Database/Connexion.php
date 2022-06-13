@@ -8,7 +8,6 @@ class Connexion
 
     public function __construct(array $config)
     {
-        $config = require '../config/database.php';
         $this->pdo = new \PDO(
             "mysql:host={$config['host']};dbname={$config['name']};charset=UTF8",
             $config['user'],
@@ -46,12 +45,12 @@ class Connexion
         return $this->pdo->lastInsertId();
     }
 
-    public function getPdo(): PDO
+    public function getPdo(): \PDO
     {
         return $this->pdo;
     }
 
-    public function setPdo(PDO $pdo): void
+    public function setPdo(\PDO $pdo): void
     {
         $this->pdo = $pdo;
     }
