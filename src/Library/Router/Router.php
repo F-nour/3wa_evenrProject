@@ -8,7 +8,6 @@ class Router
     public function route()
     {
         $route = $_SERVER['PATH_INFO'] ?? '/';
-
         // Récupération des routes de l'application
         $routes = require 'src/Library/config/routes.php';
 

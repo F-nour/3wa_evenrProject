@@ -1,20 +1,22 @@
 <?php
 
+
+function url(string $path): string
+{
+    return $_SERVER['SCRIPT_NAME'] . $path;
+}
+
 return [
     '/' => [
-        '\\Controller\HomeController',
+        '\Controller\HomeController',
         'index'
     ],
-    '/judo' => [
-        '\Controller\JudoController',
+    '/football' => [
+        '\Controller\FootballController',
         'index'
     ],
-    '/rugby' => [
-        '\Controller\RugbyController',
-        'index'
-    ],
-    '/tennis' => [
-        '\Controller\TennisController',
+    '/marathon' => [
+        '\Controller\MarathonController',
         'index'
     ],
 ];
