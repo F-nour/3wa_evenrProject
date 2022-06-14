@@ -1,13 +1,36 @@
-<nav>
+<!--<nav>
     <ul>
         <li>
-            <a href="<?= url('/') ?>" title="Accueil">Accueil</a>
+            <a href="</?/= url('/') ?/>" title="Accueil">Accueil</a>
         </li>
         <li>
-            <a href="<?= url('/football') ?>" title="Football">Football</a>
+            <a href="</?= url('/football') ?/>" title="Football">Football</a>
         </li>
         <li>
-            <a href="<?= url('/marathon') ?>" title="Marathon">Marathon</a>
+            <a href="</?= url('/marathon') ?/>" title="Marathon">Marathon</a>
         </li>
     </ul>
+</nav>-->
+
+<nav class="navbar navbar-expand-lg navbar-primary bg-light">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item nav-link ">
+                <a class="nav-link" href="<?= url('/') ?>" title="Accueil">Accueil<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item nav-link ">
+                <a class="nav-link" href="#">Inscription</a>
+            </li>
+            <li class="nav-item nav-link ">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item nav-link ">
+                <a class="nav-link" href="<?= url('/football') ?>" title="Football">Football</a>
+            </li>
+            <li class="nav-item nav-link ">
+                <a class="nav-link" href="<?= url('/marathon') ?>" title="Marathon">Marathon</a>
+            </li>
+        </ul>
+    </div>
 </nav>
