@@ -11,4 +11,6 @@ class AbstractController
         $template = "Views/$view.phtml";
         require "Views/layout.phtml";
     }
+
+    
 }
