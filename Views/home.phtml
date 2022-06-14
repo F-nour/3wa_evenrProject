@@ -12,4 +12,34 @@
             </p>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="title">
+                <h2>Les derniers évènements</h2>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <?php foreach ($lastsEvents as $event) : ?>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><?= $event->title ?></h5>
+                                                <p class="card-text"><?= $event->content ?></p>
+                                                <p class="card-text"><?= $event->date ?></p>
+                                                <p class="card-text"><?= $event->name ?></p>
+                                                <a href="index.php?p=event&id=<?= $event->id ?>" class="btn btn-primary">Voir l'évènement</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endforeach ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
