@@ -5,7 +5,7 @@ namespace Library\Core;
 abstract class AbstractManager
 {
     protected $db;
-    protected $config = 'config/database_3wa.php';
+    protected $config = 'config/database.php';
 
     const CATEGORIES = 'categories';
     const EVENT = 'event';

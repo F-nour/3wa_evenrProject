@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Model\Table;
+namespace Model\Table;
 
 class Categories {
 

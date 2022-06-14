@@ -8,4 +8,11 @@ class MarathonController extends \Library\Core\AbstractController
     {
         $this->render('marathon', 'marathon');
     }
+
+    private function getAll()
+    {
+        $manager = new \Model\Manager\EventManager();
+        $events = $manager->getByCategory(2);
+        return $events;
+    }
 }

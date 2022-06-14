@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Model\Table;
+namespace Model\Table;
 
 class Event {
     private int $id;
     private string $title;
-    private string $imae_path;
+    private string $image_path;
     private string $content;
     private string $date;
     private int $id_categorie;
@@ -30,14 +30,14 @@ class Event {
         return $this->title;
     }
 
-    private function setImaePath(string $imae_path)
+    private function setimagePath(string $image_path)
     {
-        $this->imae_path = $imae_path;
+        $this->image_path = $image_path;
     }
 
-    public function getImaePath(): string
+    public function getimagePath(): string
     {
-        return $this->imae_path;
+        return $this->image_path;
     }
 
     private function setContent(string $content)
@@ -75,7 +75,7 @@ class Event {
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'imae_path' => $this->imae_path,
+            'image_path' => $this->image_path,
             'content' => $this->content,
             'date' => $this->date,
             'id_categorie' => $this->id_categorie,

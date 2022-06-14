@@ -9,7 +9,7 @@ class Connexion
     public function __construct(array $config)
     {
         $this->pdo = new \PDO(
-            "mysql:host={$config['host']};dbname={$config['name']};charset=UTF8",
+            "mysql:host={$config['host']};dbname={$config['dbname']};charset=UTF8",
             $config['user'],
             $config['password'],
             [
